@@ -1,0 +1,49 @@
+28 C - Fox and Box Accumulation
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+9 3
+0 0 10
+
+2 2
+
+1
+1
+12 5
+0 1 2 3 4
+
+2 1
+
+1
+2
+10 4
+0 0 0 0
+
+2 4
+
+1
+3
+21 9
+0 1 0 2 0 1 1 2 10
+
+2 3
+
+1
+8 src/task
+8 -Xmx256M
+4 Main
+10 task.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.08
+30 Codeforces Round #228 (Div. 2)
+1
+16 task.InputReader
+19 java.io.PrintWriter
+0
+0
