@@ -1,0 +1,29 @@
+20 C - Harmony Analysis
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+2 2
+
+19 ++**
++*+*
+++++
++**+
+1
+8 src/task
+8 -Xmx256M
+4 Main
+10 task.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.03
+30 Codeforces Round #337 (Div. 2)
+1
+16 task.InputReader
+19 java.io.PrintWriter
+0
+0
