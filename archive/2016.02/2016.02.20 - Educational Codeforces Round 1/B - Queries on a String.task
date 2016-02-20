@@ -1,0 +1,30 @@
+23 B - Queries on a String
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+22 abacaba
+2
+3 6 1
+1 4 2
+
+8 baabcaa
+
+1
+8 src/task
+8 -Xmx256M
+4 Main
+10 task.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.20
+30 Educational Codeforces Round 1
+1
+16 task.InputReader
+19 java.io.PrintWriter
+0
+0
