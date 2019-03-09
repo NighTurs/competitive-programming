@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class InputReader {
+
     public BufferedReader reader;
     public StringTokenizer tokenizer;
 

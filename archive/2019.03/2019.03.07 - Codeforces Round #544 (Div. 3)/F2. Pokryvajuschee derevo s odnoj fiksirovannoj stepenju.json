@@ -1,0 +1,47 @@
+{
+  "name" : "F2. Покрывающее дерево с одной фиксированной степенью",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 5 1\n1 2\n1 3\n1 4\n2 3\n3 4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 5 3\n1 2\n1 3\n1 4\n2 3\n3 4\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4 4 3\n1 2\n1 4\n2 3\n3 4\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3 2 1\n1 2\n3 1\n",
+    "output" : "NO",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.F2PokrivayusheeDerevoSOdnoiFiksirovannoiStepenyu",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.07",
+  "contestName" : "Codeforces Round #544 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
