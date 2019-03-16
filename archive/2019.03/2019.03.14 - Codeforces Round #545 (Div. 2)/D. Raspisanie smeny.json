@@ -1,0 +1,62 @@
+{
+  "name" : "D. Расписание смены",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "101101\n110\n",
+    "output" : "110110\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10010110\n100011\n",
+    "output" : "01100011\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10\n11100\n",
+    "output" : "10",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "11100\n101",
+    "output" : "10101",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "1\n1",
+    "output" : "1",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "1111111111110000000000\n01100011",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "01101101110111000010011100000010110010100101011001\n01100001111011000011",
+    "index" : 6,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DRaspisanieSmeni",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.14",
+  "contestName" : "Codeforces Round #545 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
