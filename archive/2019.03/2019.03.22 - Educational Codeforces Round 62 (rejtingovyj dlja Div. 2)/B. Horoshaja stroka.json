@@ -1,0 +1,44 @@
+{
+  "name" : "B. Хорошая строка",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n2\n<>\n3\n><<\n1\n>\n",
+    "output" : "1\n0\n0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n2\n>>>\n3\n><><><\n1\n<><><><<\n3\n<<>>>>\n3\n<<<<>>\n",
+    "output" : "0\n0\n0\n2\n2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n1\n<>",
+    "output" : "1",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BHoroshayaStroka",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.22",
+  "contestName" : "Educational Codeforces Round 62 (рейтинговый для Див. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

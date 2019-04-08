@@ -1,0 +1,54 @@
+{
+  "name" : "B - Balanced Neighbors",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n",
+    "output" : "2\n1 3\n2 3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4",
+    "output" : "5\n1 2\n1 3\n2 4\n3 4",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5",
+    "output" : "10\n1 2\n1 3\n1 5\n2 4\n2 5\n3 4\n3 5\n4 5",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "6",
+    "output" : "14\n1 2\n1 3\n1 4\n1 5\n2 3\n2 4\n2 6\n3 5\n3 6\n4 5\n4 6\n5 6",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "7",
+    "output" : "21\n1 2\n1 3\n1 4\n1 5\n1 7\n2 3\n2 4\n2 6\n2 7\n3 5\n3 6\n3 7\n4 5\n4 6\n4 7\n5 6\n5 7\n6 7",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BBalancedNeighbors",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.23",
+  "contestName" : "AtCoder Grand Contest 032",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
