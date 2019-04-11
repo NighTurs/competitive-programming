@@ -1,0 +1,50 @@
+{
+  "name" : "Waffle Choppers",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n3 6 1 1\n.@@..@\n.....@\n@.@.@@\n4 3 1 1\n@@@\n@.@\n@.@\n@@@\n4 5 1 1\n.....\n.....\n.....\n.....\n4 4 1 1\n..@@\n..@@\n@@..\n@@..\n3 4 2 2\n@.@@\n@@.@\n@.@@\n3 4 1 2\n.@.@\n@.@.\n.@.@\n",
+    "output" : "Case #1: POSSIBLE\nCase #2: IMPOSSIBLE\nCase #3: POSSIBLE\nCase #4: IMPOSSIBLE\nCase #5: POSSIBLE\nCase #6: IMPOSSIBLE\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n2 2 1 1\n@@\n@@",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n5 6 1 1\n.@....\n.....@\n......\n......\n@.@...",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n5 6 1 1\n.@....\n.....@\n......\n......\n@@....",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "1\n5 6 1 2\n.@...@\n.@...@\n......\n@.....\n@.@..@",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.WaffleChoppers",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.09",
+  "contestName" : "Round 1A 2018 - Google Code Jam 2018",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

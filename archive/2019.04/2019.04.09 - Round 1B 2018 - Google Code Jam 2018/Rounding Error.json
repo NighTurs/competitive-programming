@@ -1,0 +1,38 @@
+{
+  "name" : "Rounding Error",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n3 2\n1 1\n10 3\n1 3 2\n6 2\n3 1\n9 8\n1 1 1 1 1 1 1 1\n",
+    "output" : "Case #1: 100\nCase #2: 100\nCase #3: 101\nCase #4: 99\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n100000 1\n1",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.RoundingError",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.09",
+  "contestName" : "Round 1B 2018 - Google Code Jam 2018",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
