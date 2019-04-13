@@ -1,0 +1,33 @@
+{
+  "name" : "Golf Gophers",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1 2 10\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n0 1 1 2 0 0 1 0 0 0 0 0 0 1 0 0 0 0\n1",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.GolfGophers",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.13",
+  "contestName" : "Round 1A 2019 - Google Code Jam 2019",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

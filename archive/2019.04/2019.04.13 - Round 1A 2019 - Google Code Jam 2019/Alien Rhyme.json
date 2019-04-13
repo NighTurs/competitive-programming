@@ -1,0 +1,49 @@
+{
+  "name" : "Alien Rhyme",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n2\nTARPOL\nPROL\n3\nTARPOR\nPROL\nTARPRO\n6\nCODEJAM\nJAM\nHAM\nNALAM\nHUM\nNOLOM\n4\nPI\nHI\nWI\nFI\n",
+    "output" : "Case #1: 2\nCase #2: 0\nCase #3: 6\nCase #4: 2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n2\nA\nA",
+    "output" : "Case #1: 2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n2\nAB\nAAB",
+    "output" : "Case #1: 2",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n4\nAA\nAA\nAA\nAA",
+    "output" : "Case #1: 4",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.AlienRhyme",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.13",
+  "contestName" : "Round 1A 2019 - Google Code Jam 2019",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
