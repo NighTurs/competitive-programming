@@ -3,10 +3,16 @@ package task;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Pylons {
 
-    int n, m;
+    static final long seed = System.nanoTime();
+    static final Random rand = new Random(seed);
+    Pylons.Vertex[][] vs;
+    boolean[][] visited;
+    int n;
+    int m;
     int testNumber;
     PrintWriter out;
 
@@ -16,72 +22,87 @@ public class Pylons {
 
         n = in.nextInt();
         m = in.nextInt();
-        boolean swap = false;
-        if (n > m) {
-            int z = n;
-            n = m;
-            m = z;
-            swap = true;
-        }
 
-        if (!((n > 1 && m > 4) || (m > 3 && n > 2))) {
-            out.println(String.format("Case #%d: IMPOSSIBLE", testNumber));
-            return;
-        }
-
-        out.println(String.format("Case #%d: POSSIBLE", testNumber));
-
-        List<Pair<Integer, Integer>> moves = new ArrayList<>();
-
-        int[] cur = new int[n];
-        int offset = (n % 2 == 1 && n == m) ? 1 : 0;
+        vs = new Pylons.Vertex[n][m];
 
         for (int i = 0; i < n; i++) {
-            if (i % 2 == 0) {
-                cur[i] = m - 1 - offset;
-            } else {
-                cur[i] = m - 3 - offset;
-            }
-            moves.add(new Pair<>(i, cur[i]));
-            if (moves.size() > 1 && !checkValid(moves.get(moves.size() - 2).fs,
-                    moves.get(moves.size() - 2).sc,
-                    moves.get(moves.size() - 1).fs,
-                    moves.get(moves.size() - 1).sc)) {
-                out.println("BULLSHIT");
-                return;
+            for (int h = 0; h < m; h++) {
+                vs[i][h] = new Pylons.Vertex(i, h);
             }
         }
 
-        while (moves.size() < n * m) {
-            for (int i = 0; i < n; i++) {
-                cur[i]++;
-                if (cur[i] >= m) {
-                    cur[i] = 0;
+        for (int i = 0; i < n; i++) {
+            for (int h = 0; h < m; h++) {
+                for (int j1 = 0; j1 < n; j1++) {
+                    for (int j2 = 0; j2 < m; j2++) {
+                        if (i == j1 || h == j2) {
+                            continue;
+                        }
+                        if (i + h == j1 + j2 || i - h == j1 - j2) {
+                            continue;
+                        }
+                        vs[i][h].adj.add(vs[j1][j2]);
+                    }
                 }
-                moves.add(new Pair<>(i, cur[i]));
-                if (!checkValid(moves.get(moves.size() - 2).fs,
-                        moves.get(moves.size() - 2).sc,
-                        moves.get(moves.size() - 1).fs,
-                        moves.get(moves.size() - 1).sc)) {
-                    out.println("BULLSHIT");
+            }
+        }
+
+        visited = new boolean[n][m];
+
+        for (int i = 0; i < n; i++) {
+            for (int h = 0; h < m; h++) {
+                if (traverse(vs[i][h], 1)) {
+                    out.println(String.format("%d %d", i + 1, h + 1));
                     return;
                 }
             }
         }
-
-        for (Pair<Integer, Integer> move : moves) {
-            if (swap) {
-                out.println(String.format("%d %d", move.sc + 1, move.fs + 1));
-            } else {
-                out.println(String.format("%d %d", move.fs + 1, move.sc + 1));
-            }
-        }
+        out.println(String.format("Case #%d: IMPOSSIBLE", testNumber));
     }
 
-    public boolean checkValid(int x1, int y1, int x2, int y2) {
-        if (x1 == x2 || y1 == y2 || x1 + y1 == x2 + y2 || x1 - y1 == x2 - y2) {
-            return false;
+    boolean traverse(Pylons.Vertex v, int count) {
+        if (count == n * m) {
+            out.println(String.format("Case #%d: POSSIBLE", testNumber));
+            return true;
         }
-        return true;
+        visited[v.x][v.y] = true;
+        for (Pylons.Vertex to : v.shuffleAdj()) {
+            if (!visited[to.x][to.y]) {
+                if (traverse(to, count + 1)) {
+                    out.println(String.format("%d %d", to.x + 1, to.y + 1));
+                    return true;
+                }
+            }
+        }
+
+        visited[v.x][v.y] = false;
+        return false;
+    }
+
+    public static class Vertex {
+
+        int x;
+        int y;
+        List<Pylons.Vertex> adj = new ArrayList<>();
+
+        public Vertex(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public Vertex[] shuffleAdj() {
+            Vertex[] s = new Vertex[adj.size()];
+            for (int i = 0; i < adj.size(); i++) {
+                s[i] = adj.get(i);
+            }
+
+            for (int i = 0; i < adj.size(); i++) {
+                int j = rand.nextInt(i + 1);
+                Vertex t = s[i];
+                s[i] = s[j];
+                s[j] = t;
+            }
+            return s;
+        }
     }
 }
