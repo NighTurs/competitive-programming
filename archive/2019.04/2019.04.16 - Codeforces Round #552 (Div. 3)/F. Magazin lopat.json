@@ -1,0 +1,44 @@
+{
+  "name" : "F. Магазин лопат",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7 4 5\n2 5 4 2 6 3 1\n2 1\n6 5\n2 1\n3 1\n",
+    "output" : "7\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "9 4 8\n6 8 5 1 8 1 1 2 1\n9 2\n8 4\n5 3\n9 7\n",
+    "output" : "17\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 1 4\n2 5 7 4 6\n5 4\n",
+    "output" : "17\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.FMagazinLopat",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.16",
+  "contestName" : "Codeforces Round #552 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

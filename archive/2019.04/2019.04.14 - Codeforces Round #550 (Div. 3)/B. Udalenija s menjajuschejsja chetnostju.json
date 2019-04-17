@@ -1,0 +1,44 @@
+{
+  "name" : "B. Удаления с меняющейся четностью",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 5 7 8 2\n",
+    "output" : "0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6\n5 1 2 4 6 3\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n1000000 1000000\n",
+    "output" : "1000000\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BUdaleniyaSMenyayusheisyaChetnostyu",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.14",
+  "contestName" : "Codeforces Round #550 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
