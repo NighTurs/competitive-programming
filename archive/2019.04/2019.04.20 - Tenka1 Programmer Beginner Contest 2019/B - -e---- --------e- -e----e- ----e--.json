@@ -1,0 +1,44 @@
+{
+  "name" : "B - *e**** ********e* *e****e* ****e**",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\nerror\n2\n",
+    "output" : "*rr*r\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6\neleven\n5\n",
+    "output" : "e*e*e*\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "9\neducation\n7\n",
+    "output" : "******i**\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BEEEeE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.20",
+  "contestName" : "Tenka1 Programmer Beginner Contest 2019",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

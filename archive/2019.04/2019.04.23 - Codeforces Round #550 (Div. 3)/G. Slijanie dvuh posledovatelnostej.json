@@ -1,0 +1,39 @@
+{
+  "name" : "G. Слияние двух последовательностей",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "9\n5 1 3 6 8 2 9 0 10\n",
+    "output" : "YES\n1 0 0 0 0 1 0 1 0 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n1 2 4 0 2\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.GSliyanieDvuhPosledovatelnostei",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.23",
+  "contestName" : "Codeforces Round #550 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

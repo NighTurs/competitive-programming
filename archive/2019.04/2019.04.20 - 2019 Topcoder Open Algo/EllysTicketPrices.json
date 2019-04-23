@@ -1,0 +1,41 @@
+{
+  "name" : "EllysTicketPrices",
+  "signature" : {
+    "name" : "getPrice",
+    "result" : "double",
+    "arguments" : [ "int", "int[]", "int" ],
+    "argumentNames" : [ "N", "C", "target" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "5", "-10 15 5 -20", "180" ],
+    "result" : "184.01",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "11", "5 16 17 -3 -10 20 20 14 2 0", "1337" ],
+    "result" : "874.77",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "2", "0", "42" ],
+    "result" : "42.0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "20", "30 -26 87 47 -39 25 -67 62 -38 68 -84 5 28 -20 50 -61 10 63 -71", "392" ],
+    "result" : "476.28",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "50", "-60 61 17 86 56 27 9 41 -27 -36 57 -16 1 50 -55 -36 14 13 -93 14 18 25 62 -18 40 79 56 19 10 -55 -43 45 -43 -84 61 -64 41 -55 38 18 36 -43 79 33 87 19 -47 38 -56", "8887" ],
+    "result" : "9451.93",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2019.04.20",
+  "contestName" : "2019 Topcoder Open Algo",
+  "testClasses" : [ ],
+  "fqn" : "task.EllysTicketPrices",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
