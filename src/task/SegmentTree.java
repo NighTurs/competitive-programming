@@ -47,10 +47,12 @@ public class SegmentTree {
         if (l > tm) {
             return query(v * 2 + 1, tm + 1, tr, l, r);
         }
-        return new Data().combine(query(v * 2, tl, tm, l, tm), query(v * 2 + 1, tm + 1, tr, tm + 1, r));
+        return new Data().combine(query(v * 2, tl, tm, l, Math.min(tm, r)),
+                query(v * 2 + 1, tm + 1, tr, Math.max(l, tm + 1), r));
     }
 
     public static class Data {
+
         int sum;
 
         public void update(int val) {
