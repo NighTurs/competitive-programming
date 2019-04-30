@@ -1,0 +1,41 @@
+{
+  "name" : "CrazyCrazy",
+  "signature" : {
+    "name" : "possible",
+    "result" : "String",
+    "arguments" : [ "String" ],
+    "argumentNames" : [ "song" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "aabb" ],
+    "result" : "possible",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "abba" ],
+    "result" : "impossible",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "verylazyverylazy" ],
+    "result" : "possible",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "arqmpfvvbtltlhufznkldkurrazmgebfxeamrewn" ],
+    "result" : "impossible",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "aacfcfqqsmksimkoioeertbrtbhphnpnggddjjll" ],
+    "result" : "possible",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2019.04.26",
+  "contestName" : "TopCoder SRM #756",
+  "testClasses" : [ ],
+  "fqn" : "task.CrazyCrazy",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

@@ -1,0 +1,79 @@
+{
+  "name" : "C2. Возрастающая подпоследовательность (усложнённая версия)",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 2 4 3 2\n",
+    "output" : "4\nLRRR\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "7\n1 3 5 6 5 4 2\n",
+    "output" : "6\nLRLRRR\n",
+    "index" : 1,
+    "active" : false
+  }, {
+    "input" : "3\n2 2 2\n",
+    "output" : "1\nR\n",
+    "index" : 2,
+    "active" : false
+  }, {
+    "input" : "4\n1 2 4 3\n",
+    "output" : "4\nLLRR\n",
+    "index" : 3,
+    "active" : false
+  }, {
+    "input" : "2\n1 1",
+    "output" : "1\nL",
+    "index" : 4,
+    "active" : false
+  }, {
+    "input" : "1\n1",
+    "output" : "1\nR",
+    "index" : 5,
+    "active" : false
+  }, {
+    "input" : "5\n2 1 5 4 3",
+    "output" : "4\nLRRR",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "7\n1 3 5 6 7 4 2",
+    "output" : "7\nLRLRLLR",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "3\n1 2 3",
+    "output" : "3\nLLR",
+    "index" : 8,
+    "active" : true
+  }, {
+    "input" : "4\n1 2 4 3",
+    "output" : "4\nLLRR",
+    "index" : 9,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.C2VozrastayushayaPodposledovatelnostUslozhnennayaVersiya",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.26",
+  "contestName" : "Codeforces Round #555 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
