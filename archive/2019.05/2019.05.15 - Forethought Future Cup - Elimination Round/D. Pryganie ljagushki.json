@@ -1,0 +1,54 @@
+{
+  "name" : "D. Прыгание лягушки",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7 5 3\n",
+    "output" : "19\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1000000000 1 2019\n",
+    "output" : "500000001500000001\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "100 100000 1\n",
+    "output" : "101\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "6 4 5\n",
+    "output" : "10\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "172165 93846 84\n",
+    "output" : "1735345812",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DPriganieLyagushki",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.15",
+  "contestName" : "Forethought Future Cup - Elimination Round",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
