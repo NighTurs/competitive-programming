@@ -1,0 +1,33 @@
+{
+  "name" : "E. Угадай корень",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "66\n4083\n132854\n864128\n258741\n71030\n479046\n434093\n948270\n641976\n189614\n559505\n772421\n930736\n125779\n143503\n286595\n743747\n392412\n349133\n609927\n381309\n818895\n494033\n628461\n601075\n68704\n882728\n454470\n953371\n341431\n384714\n65870\n880193\n959803\n465509\n842027\n978718\n683445\n790268\n311473\n939554\n533913\n619333\n6997\n53369\n425791\n175520\n57508\n10520\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.EUgadaiKoren",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.17",
+  "contestName" : "Educational Codeforces Round 63 (рейтинговый для Див. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
