@@ -1,0 +1,39 @@
+{
+  "name" : "D. Милые последовательности",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n5 26 2\n3 9 1\n",
+    "output" : "4 5 6 13 26\n-1\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "3\n1 1 1000000000\n1 2 1000000000\n1 1000000000 1000000000",
+    "output" : "1 1\n2 1 2\n2 1 1000000000",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DMiliePosledovatelnosti",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.17",
+  "contestName" : "Codeforces Round #561 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
