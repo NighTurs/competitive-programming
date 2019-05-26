@@ -1,0 +1,34 @@
+{
+  "name" : "New Elements: Part 2",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n3\n1 1\n1 2\n2 1\n4\n1 2\n2 1\n4 2\n2 4\n3\n1 2\n1 3\n2 3\n",
+    "output" : "Case #1: 2 1\nCase #2: IMPOSSIBLE\nCase #3: 1 1\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.NewElementsPart2",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.18",
+  "contestName" : "Round 2 2019 - Google Code Jam 2019",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

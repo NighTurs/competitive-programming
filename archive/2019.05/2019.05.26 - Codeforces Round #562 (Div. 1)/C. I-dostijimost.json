@@ -1,0 +1,44 @@
+{
+  "name" : "C. И-достижимость",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 3\n1 3 0 2 1\n1 3\n2 4\n1 4\n",
+    "output" : "Fou\nShi\nShi\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1 1\n1 1\n1 1",
+    "output" : "Shi",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 2\n1 2\n1 1\n1 2",
+    "output" : "Shi\nFou",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.CIDostizhimost",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.26",
+  "contestName" : "Codeforces Round #562 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
