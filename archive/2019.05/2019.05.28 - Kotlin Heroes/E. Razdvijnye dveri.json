@@ -1,0 +1,44 @@
+{
+  "name" : "E. Раздвижные двери",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 10\n2 3 2\n6\n1 5\n2 1 10\n2 2 9\n2 5 6\n3 1 7 8\n4 1 2 3 4\n",
+    "output" : "YES\nYES\nNO\nNO\nYES\nNO\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1 1\n1\n1\n1 1",
+    "output" : "NO",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 2\n1\n3\n1 1\n1 2\n2 1 2",
+    "output" : "YES\nYES\nNO",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.ERazdvizhnieDveri",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.28",
+  "contestName" : "Kotlin Heroes",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

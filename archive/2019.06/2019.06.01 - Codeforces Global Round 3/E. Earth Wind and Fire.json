@@ -1,0 +1,43 @@
+{
+  "name" : "E. Earth Wind and Fire",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n2 2 7 4 9\n5 4 5 5 5\n",
+    "output" : "YES\n4\n4 3 1\n2 3 1\n2 5 2\n1 5 2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n1 5 10\n3 5 7\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n2 10\n1 11",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.EEarthWindAndFire",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.06.01",
+  "contestName" : "Codeforces Global Round 3",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

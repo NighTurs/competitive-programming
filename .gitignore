@@ -1,6 +1,7 @@
 *.iml
 *.txt
 .idea/
+lib/
 out/
 src/Main.java
 src/Solution.java
