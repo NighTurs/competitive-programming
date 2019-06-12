@@ -1,0 +1,44 @@
+{
+  "name" : "C. Красивые строфы",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "14\nwow\nthis\nis\nthe\nfirst\nmcdics\ncodeforces\nround\nhooray\ni\nam\nproud\nabout\nthat\n",
+    "output" : "3\nabout proud\nhooray round\nwow first\nthis is\ni that\nmcdics am\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "7\narsijo\nsuggested\nthe\nidea\nfor\nthis\nproblem\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4\nsame\nsame\nsame\ndiffer\n",
+    "output" : "1\nsame differ\nsame same\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.CKrasivieStrofi",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.06.11",
+  "contestName" : "Codeforces Round #566 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
