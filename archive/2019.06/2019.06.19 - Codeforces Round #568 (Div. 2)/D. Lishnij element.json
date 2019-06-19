@@ -1,0 +1,59 @@
+{
+  "name" : "D. Лишний элемент",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n2 6 8 7 4\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8\n1 2 3 4 5 6 7 8\n",
+    "output" : "1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4\n1 2 4 8\n",
+    "output" : "-1\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4\n1 2 5 3",
+    "output" : "3",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "4\n1 3 4 5",
+    "output" : "1",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "2\n1 100000",
+    "output" : "1",
+    "index" : 5,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DLishniiElement",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.06.19",
+  "contestName" : "Codeforces Round #568 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
