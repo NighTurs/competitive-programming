@@ -1,0 +1,70 @@
+{
+  "name" : "Pattern Matching",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n5\n*CONUTS\n*COCONUTS\n*OCONUTS\n*CONUTS\n*S\n2\n*XZ\n*XYZ\n",
+    "output" : "Case #1: COCONUTS\nCase #2: *\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n4\nH*O\nHELLO*\n*HELLO\nHE*",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n2\nCO*DE\nJ*AM",
+    "output" : "Case #1: *",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n2\nA*C*E\n*B*D*",
+    "output" : "Case #1: ABCDE",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "1\n2\n**Q**\n*A*",
+    "output" : "Case #1: QA",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "2\n2\nAB\n*AB\n2\nAB\nAB*",
+    "output" : "Case #1: AB\nCase #2: AB",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "1\n2\nAB\nAB*",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "1\n2\nABB\nAB",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "1\n2\nABB\nAB*",
+    "index" : 8,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.PatternMatching",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.04.11",
+  "contestName" : "Google Coding Competitions - Round 1A 2020 - Code Jam 2020",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
