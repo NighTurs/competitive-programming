@@ -1,0 +1,39 @@
+{
+  "name" : "Retiling",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n2 4 1 1\nMGMG\nMMMG\nGMGM\nMMMM\n3 3 1 1\nMGG\nGMG\nMMM\nMMM\nMGM\nMMG\n",
+    "output" : "Case #1: 3\nCase #2: 4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n1 5 1000 1\nMGGGG\nGGGMM\n",
+    "output" : "Case #1: 1003\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.Retiling",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.06.04",
+  "contestName" : "Google Coding Competitions - Round 2 2021 - Code Jam 2021",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
