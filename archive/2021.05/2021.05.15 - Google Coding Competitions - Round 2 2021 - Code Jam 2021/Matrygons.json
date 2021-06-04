@@ -1,0 +1,47 @@
+{
+  "name" : "Matrygons",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n33\n15\n41",
+    "output" : "Case #1: 3\nCase #2: 2\nCase #3: 1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n9\n12\n10",
+    "output" : "Case #1: 2\nCase #2: 2\nCase #3: 1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\n189\n21\n30",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n101",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "task.Matrygons",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.05.15",
+  "contestName" : "Google Coding Competitions - Round 2 2021 - Code Jam 2021",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
