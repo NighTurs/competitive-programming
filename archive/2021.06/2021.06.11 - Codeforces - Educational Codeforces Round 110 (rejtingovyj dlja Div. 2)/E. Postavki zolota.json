@@ -1,0 +1,38 @@
+{
+  "name" : "E. Поставки золота",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6 5 2\n2 0 2\n1 0 3 4\n2 2 4\n1 0 1 3\n2 4 2\n2 0 2",
+    "output" : "2 4\n4 10\n1 3\n0 0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "30 293085 33154\n1 0 477752 107316\n1 0 308057 674554\n1 0 348162 623441\n1 1 817920 529993\n2 3 932718\n2 3 266708\n1 0 703755 566971\n2 0 86516\n1 0 766735 651070\n2 1 336265\n1 0 287402 584956\n2 2 810233\n1 0 850631 38628\n1 0 251830 557030\n2 13 696018\n2 1 413269\n1 2 60885 693624\n1 0 72380 687601\n2 4 187449\n1 0 269357 223392\n2 13 398848\n2 3 522461\n1 0 6173 352885\n1 0 517009 163937\n2 14 481752\n2 3 674830\n1 0 879238 497878\n1 0 384964 332372\n2 1 566898\n1 0 577769 161844\n2 0 300005\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.EPostavkiZolota",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.06.11",
+  "contestName" : "Codeforces - Educational Codeforces Round 110 (рейтинговый для Див. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
