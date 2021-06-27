@@ -1,0 +1,38 @@
+{
+  "name" : "A. Покраска флага",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n4 6\n.R....\n......\n......\n.W....\n4 4\n.R.W\n....\n....\n....\n5 1\nR\nW\nR\nW\nR\n",
+    "output" : "YES\nWRWRWR\nRWRWRW\nWRWRWR\nRWRWRW\nNO\nYES\nR\nW\nR\nW\nR\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n4 6\n......\n......\n......\n......",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.APokraskaFlaga",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.06.13",
+  "contestName" : "Codeforces - Codeforces LATOKEN Round 1 (Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
