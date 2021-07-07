@@ -1,0 +1,39 @@
+{
+  "name" : "B. Приятные пары",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n2\n3 1\n3\n6 1 5\n5\n3 1 5 9 2\n",
+    "output" : "1\n1\n3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n1\n1",
+    "output" : "0",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BPriyatniePari",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.07.06",
+  "contestName" : "Codeforces - Codeforces Round #728 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
