@@ -70,7 +70,7 @@ public class InputReader {
         return ret;
     }
 
-    private int next() {
+    private int nextC() {
         if (numChars == -1) {
             throw new InputMismatchException();
         }
@@ -88,9 +88,9 @@ public class InputReader {
     }
 
     public char nextChar() {
-        int c = next();
+        int c = nextC();
         while (isSpaceChar(c)) {
-            c = next();
+            c = nextC();
         }
         if ('a' <= c && c <= 'z') {
             return (char) c;
@@ -101,15 +101,15 @@ public class InputReader {
         throw new InputMismatchException();
     }
 
-    public String nextToken() {
-        int c = next();
+    public String next() {
+        int c = nextC();
         while (isSpaceChar(c)) {
-            c = next();
+            c = nextC();
         }
         StringBuilder res = new StringBuilder();
         do {
             res.append((char) c);
-            c = next();
+            c = nextC();
         } while (!isSpaceChar(c));
         return res.toString();
     }
@@ -119,7 +119,7 @@ public class InputReader {
         int sgn = 1;
         if (c == '-') {
             sgn = -1;
-            c = next();
+            c = nextC();
         }
         int res = 0;
         do {
@@ -128,7 +128,7 @@ public class InputReader {
             }
             res *= 10;
             res += c-'0';
-            c = next();
+            c = nextC();
         } while (!isSpaceChar(c));
         return res*sgn;
     }
@@ -138,7 +138,7 @@ public class InputReader {
         long sgn = 1;
         if (c == '-') {
             sgn = -1;
-            c = next();
+            c = nextC();
         }
         long res = 0;
         do {
@@ -147,7 +147,7 @@ public class InputReader {
             }
             res *= 10;
             res += c-'0';
-            c = next();
+            c = nextC();
         } while (!isSpaceChar(c));
         return res*sgn;
     }
@@ -155,13 +155,13 @@ public class InputReader {
 
     public double nextDouble() {
         // TODO: we should make some effort to handle this...
-        return Double.valueOf(nextToken());
+        return Double.valueOf(next());
     }
 
     public int skipWhileSpace() {
-        int c = next();
+        int c = nextC();
         while (isSpaceChar(c)) {
-            c = next();
+            c = nextC();
         }
         return c;
     }
