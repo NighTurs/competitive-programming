@@ -29,6 +29,11 @@
     "output" : "YES",
     "index" : 3,
     "active" : true
+  }, {
+    "input" : "1\n\n6\n\n2 1 2 1 2 1\n",
+    "output" : "NO",
+    "index" : 4,
+    "active" : true
   } ],
   "location" : "src/task",
   "vmArgs" : "-Xmx256M",
