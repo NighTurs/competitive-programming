@@ -1,0 +1,63 @@
+{
+  "name" : "E. Минимакс",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\nvkcup\nabababa\nzzzzzz\n",
+    "output" : "ckpuv\naababab\nzzzzzz\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\nzzzzzz",
+    "output" : "zzzzzz",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5\naaaaaaabbb\naaaaaabbbb\naaaaabbbbb\naaaabbbbbb\naaaaaaaabb",
+    "output" : "abaaaaaabb\naababababa\naababababb\naabababbbb\nabaaaaaaab",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3\naaaaaaaz\nzb\naazzbb",
+    "output" : "zaaaaaaa\nbz\naabbzz",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "6\naab\nbaa\naabcd\naaaaaaabbccdd\naaaaaaaabbccdd\naaaaaaaaabbccdd",
+    "output" : "baa\nbaa\nbaacd\naababacacadad\naababacacadada\nabaaaaaaaabccdd",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "1\naaabbbbbbbbccccccccccc",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "1\nabbaaaaaaaaaaaaaaaaaaaaa",
+    "output" : "abbaaaaaaaaaaaaaaaaaaaaa",
+    "index" : 6,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.EMinimaks",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.07.17",
+  "contestName" : "Codeforces - Codeforces Round #733 (Div. 1 + Div. 2, основан на VK Cup 2021 - Отбор (Engine))",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
