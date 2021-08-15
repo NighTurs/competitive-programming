@@ -1,0 +1,38 @@
+{
+  "name" : "B. Mocha и красное и синее",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n7\n?R???BR\n7\n???R???\n1\n?\n1\nB\n10\n?R??RB??B?\n",
+    "output" : "BRRBRBR\nBRBRBRB\nB\nB\nBRRBRBBRBR\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n7\n???????",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.BMochaIKrasnoeISinee",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.08.15",
+  "contestName" : "Codeforces - Codeforces Round #738 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
