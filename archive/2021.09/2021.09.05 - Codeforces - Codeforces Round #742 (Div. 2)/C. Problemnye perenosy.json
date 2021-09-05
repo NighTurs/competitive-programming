@@ -1,0 +1,39 @@
+{
+  "name" : "C. Проблемные переносы",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n100\n12\n8\n2021\n10000\n",
+    "output" : "9\n4\n7\n44\n99\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n2021\n10000",
+    "output" : "",
+    "index" : 1,
+    "active" : false
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.CProblemniePerenosi",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.09.05",
+  "contestName" : "Codeforces - Codeforces Round #742 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

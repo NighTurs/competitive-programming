@@ -1,0 +1,38 @@
+{
+  "name" : "D. Своеобразная система счисления",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n97 2\n17 1\n111 4\n100 2\n10 9\n999999 3\n",
+    "output" : "70 27\n17\n3 4 100 4\n10 90\n1 1 2 1 1 1 1 1 1\n999900 90 9\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n111 4",
+    "index" : 1,
+    "active" : false
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DSvoeobraznayaSistemaSchisleniya",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.09.05",
+  "contestName" : "Codeforces - Codeforces Round #742 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
