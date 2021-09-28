@@ -1,0 +1,39 @@
+{
+  "name" : "D. Продуктивная встреча",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "8\n2\n2 3\n3\n1 2 3\n4\n1 2 3 4\n3\n0 0 2\n2\n6 2\n3\n0 0 2\n5\n8 2 0 1 1\n5\n0 1 0 0 6\n",
+    "output" : "2\n1 2\n1 2\n3\n1 3\n2 3\n2 3\n5\n1 3\n2 4\n2 4\n3 4\n3 4\n0\n2\n1 2\n1 2\n0\n4\n1 2\n1 5\n1 4\n1 2\n1\n5 2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n3\n2 2 2",
+    "output" : "",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.DProduktivnayaVstrecha",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.09.28",
+  "contestName" : "Codeforces - Codeforces Round #744 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
