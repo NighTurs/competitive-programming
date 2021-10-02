@@ -1,0 +1,64 @@
+{
+  "name" : "B",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1\nWW\nBW\n2 2\nWB\nWW\n",
+    "output" : "Yes\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\nWW\nBB\nWB\nWB\n2 4\nWBBW\nWBBW\n",
+    "output" : "Yes\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\nWW\nWW\nWW\nWW\nBB\nBB\n4 2\nWW\nBB\nBB\nWW\n",
+    "output" : "No\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4\nWW\nWB\nWW\nWB\nWW\nWB\nWW\nWB\n2 2\nBB\nBB\n",
+    "output" : "No\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "2\nBW\nWB\nBW\nWB\n2 2\nWW\nBB\n",
+    "output" : "No\n",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "4\nRR\nRR\nWW\nWW\nBB\nBB\nWW\nWW\n4 4\nWWBB\nWWBB\nRRWW\nRRWW\n",
+    "output" : "Yes\n",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "1\nRW\nRB\n2 2\nRB\nRW\n",
+    "output" : "No",
+    "index" : 6,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "task.B",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.10.02",
+  "contestName" : "yacup 2021 kval",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
