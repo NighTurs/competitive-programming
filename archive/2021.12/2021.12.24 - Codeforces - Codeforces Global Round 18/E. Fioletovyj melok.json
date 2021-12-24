@@ -1,0 +1,49 @@
+{
+  "name" : "E. Фиолетовый мелок",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 2\n1 2\n1 3\n1 4\n",
+    "output" : "1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 2\n1 2\n2 3\n3 4\n4 5\n",
+    "output" : "6\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "7 2\n1 2\n1 3\n4 2\n3 5\n6 3\n6 7\n",
+    "output" : "4\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4 1\n1 2\n1 3\n1 4\n",
+    "output" : "-1\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.EFioletoviiMelok",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.12.24",
+  "contestName" : "Codeforces - Codeforces Global Round 18",
+  "truncate" : true,
+  "inputClass" : "task.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
